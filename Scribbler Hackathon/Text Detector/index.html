@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webcam Text Detection with Text-to-Speech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Webcam Text Detection for the Visually Impaired</h1>
+  <div class="container">
+    <!-- Webcam Video Feed -->
+    <video id="webcam" autoplay playsinline></video>
+    
+    <!-- Canvas for Capturing Frames (Hidden) -->
+    <canvas id="canvas"></canvas>
+    <button id="captureButton">Capture Text</button>
+
+    <!-- Detected Text Display -->
+    <div id="textResult">Detected Text: <span id="detectedText">None</span></div>
+  </div>
+
+  <!-- Tesseract.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v2.1.4/dist/tesseract.min.js"></script>
+  <!-- Main JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>

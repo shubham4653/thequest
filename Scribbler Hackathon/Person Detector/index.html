@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Object Detection and Speech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+    #video {
+      width: 80%;
+      max-width: 700px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+    }
+    #response-text {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+    #thinking-animation {
+      display: none;
+      font-size: 2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Real-Time Object Detection</h1>
+  <video id="video" autoplay playsinline></video>
+  <div id="thinking-animation">Thinking...</div>
+  <p id="response-text">Waiting for detection...</p>
+
+  <!-- Include TensorFlow.js and COCO-SSD -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
