@@ -39,6 +39,6 @@ Contributions, feedback, and feature requests are welcome! Feel free to fork the
 This project is open-source and available under the MIT License.
 
 ##👨‍💻 Author
-Shubham Awari , Ananti , Prasanjeet
+Shubham Awari , Ananti , Prasenjit Choudhury
 
 Made with 🔥 and curiosity for the adventurous mind.
